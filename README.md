@@ -1,5 +1,7 @@
 # Discord Server Asset Automator
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+
 実行時の日付に基づいた画像ファイル（GIF等）を読み込み、指定したDiscordサーバーの**アイコン**と**バナー**を自動的に更新するPythonスクリプトです。
 
 ## 📝 機能概要
@@ -62,3 +64,7 @@ python main.py
 * **Botの権限**: Botが対象サーバーに参加しており、かつ「**サーバー管理 (Manage Server)**」権限を持つロールが付与されている必要があります。権限がない場合、ログにエラーが出力されます。
 * **APIの制限**: Discord APIのレートリミット（実行回数制限）を回避するため、過度な連続実行は避けてください。cronやGitHub Actions、タスクスケジューラ等を用いて、1日1回などの決まったタイミングで実行する運用を推奨します。
 * **対応フォーマット**: 現在のスクリプトは `.gif` を想定したファイル名で検索を行います。`.png` や `.jpg` など他の拡張子を使用する場合は、スクリプト内の `icon_filename` および `banner_filename` 変数の定義を適宜修正してください。
+
+## 📄 ライセンス
+
+このプロジェクトは [MIT License](LICENSE) のもとで公開されています。詳細については、リポジトリ内の `LICENSE` ファイルをご確認ください。
